@@ -1,0 +1,21 @@
+Dataset Description
+Column1: Video id of 11 characters.
+Column2: uploader of the video of string data type.
+Column3: Interval between day of establishment of Youtube and the date of uploading of the video of integer data type.
+Column4: Category of the video of String data type.
+Column5: Length of the video of integer data type.
+Column6: Number of views for the video of integer data type.
+Column7: Rating on the video of float data type.
+Column8: Number of ratings given on the video.
+Column9: Number of comments on the videos in integer data type.
+Column10: Related video ids with the uploaded video.
+
+
+
+
+1.create table data(vid string,uv string,dayofest string,category string,lenvd string,numberview string,ratting string,numberofrate string,numberofcomment string,videoid1 string,videoid2 string,videoid3 string,videoid4 string,videoid5 string,videoid6 string,videoid7 string,videoid8 string,videoid9 string,videoid10 string,videoid11 string,videoid12 string,videoid13 string,videoid14 string,videoid15 string,videoid16 string,videoid17 string,videoid18 string,videoid19 string,videoid20 string,videoid21 string,videoid22 string,videoid23 string,videoid24 string)
+    > row format delimited
+    > fields terminated by ','
+
+
+2.select videoid20 from datanew group by videoid20; 
