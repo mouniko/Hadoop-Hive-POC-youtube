@@ -1,0 +1,15 @@
+1.Create a table with fields mentioned in the problem description as managed tables.
+Here it is created as internal tables.
+Even youy can create external tables and work on it
+2.load the data from local or from HDFS into above created table
+load data local inpath '<complete url for the data'> into table <table name>
+3.To find the top 5 categories with maximum number of videos uploaded
+select category,uv from <table name> order by uv desc limit 5
+4.To find out the top 10 rated videos. 
+select vid,ratting from <table name> order by ratting desc limit 10
+5.Find out the most viewed videos.
+select vid,numberview from <table name> order by numberview desc limit 50 
+6.to find top 10 rated videos in each category
+select category,count(*) as vcount from <table name> group by category sort by vcount desc
+select category,count(ratting) as vcount from <table name> group by category,ratting sort by vcount desc limit 20
+7.
